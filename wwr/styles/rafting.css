@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #64e1e6;
+    /*Electric Blue*/
+    --secondary-color: #f9fcfb;
+    /*off white*/
+    --accent1-color: #FF914D;
+    /*Atomic Tangerine*/
+    --accent2-color: #211914;
+    /*licorice*/
+    --heading-font: "Roboto Condensed", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent2-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+
+/* 1. Allow children (h1 and article) to be absolutely positioned over .hero */
+.hero {
+    position: relative;
+}
+
+/* 2. Hero image should fill the container and maintain aspect ratio */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 3. h1 over the hero image, centered, with readable background */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+/* 4. Style the article so it overlays the image too */
+.hero article {
+    position: absolute;
+    bottom: 2px;
+    left: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    /* semi-transparent white for readability */
+    padding: 16px;
+    max-width: 400px;
+    /* optional but adds polish */
+}
+
+.hero article img {
+    float: right;
+    width: 200px;
+    /* smaller width */
+    height: auto;
+    /* fixed height to crop */
+    object-fit: cover;
+    /* this crops the image to fill the box */
+    margin-left: 10px;
+    /* optional spacing */
+}
+
+
+nav a {
+    margin: 0 8px;
+    color: var(--accent2-color);
+    font-weight: bold;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+}
