@@ -109,8 +109,3 @@ nav a {
     color: var(--accent2-color);
     font-weight: bold;
 }
-
-.logo {
-    width: 250px;
-    height: auto;
-}
