@@ -54,19 +54,16 @@ article {
 }
 
 
-/* 1. Allow children (h1 and article) to be absolutely positioned over .hero */
 .hero {
     position: relative;
 }
 
-/* 2. Hero image should fill the container and maintain aspect ratio */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* 3. h1 over the hero image, centered, with readable background */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -78,29 +75,21 @@ article {
     color: #fff;
 }
 
-/* 4. Style the article so it overlays the image too */
 .hero article {
     position: absolute;
     bottom: 2px;
     left: 100px;
     background-color: rgba(255, 255, 255, 0.8);
-
-    /* semi-transparent white for readability */
     padding: 16px;
     max-width: 400px;
-    /* optional but adds polish */
 }
 
 .hero article img {
     float: right;
     width: 200px;
-    /* smaller width */
     height: auto;
-    /* fixed height to crop */
     object-fit: cover;
-    /* this crops the image to fill the box */
     margin-left: 10px;
-    /* optional spacing */
 }
 
 
