@@ -42,14 +42,14 @@ nav a {
     font-weight: bolder;
     font-size: larger;
     text-decoration: none;
+    text-align: center;
 
 }
 
 nav {
     /*home, about us, trips, contact us menu*/
     display: flex;
-    justify-content: flex-end;
-    gap: 20px;
+    justify-content: flex-start;
 }
 
 header {
@@ -64,7 +64,7 @@ header {
 header img.Logo {
     /*top logo*/
     max-width: 300px;
-    height: 200;
+    height: 200px;
     margin: 35px;
 }
 
@@ -204,5 +204,3 @@ footer nav.socialmedia img {
 .socialmedia a {
     text-decoration: none;
 }
-
-/*test*/
