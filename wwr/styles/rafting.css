@@ -42,10 +42,32 @@ nav a {
     font-weight: bolder;
     font-size: larger;
     text-decoration: none;
+
 }
 
+nav {
+    /*home, about us, trips, contact us menu*/
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
 
-/* 1. Allow children (h1 and article) to be absolutely positioned over .hero */
+header {
+    /*top menu container*/
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+}
+
+header img.Logo {
+    /*top logo*/
+    max-width: 300px;
+    height: 200;
+    margin: 35px;
+}
+
 .hero {
     /*hero river image background*/
     position: relative;
@@ -73,32 +95,71 @@ nav a {
 .hero article {
     /*article words*/
     position: absolute;
-    bottom: 2px;
-    left: 100px;
-    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    bottom: 30%;
+    background-color: hsl(160, 33%, 98%, .8);
 
-    /* semi-transparent white for readability */
-    padding: 16px;
-    max-width: 400px;
-    /* optional but adds polish */
 }
 
 .hero article img {
     /*happy worker image on hero*/
     float: right;
+    padding: 1%;
+    height: 200px;
+    width: auto;
     width: 200px;
-    /* smaller width */
     height: auto;
-    /* fixed height to crop */
     object-fit: cover;
-    /* this crops the image to fill the box */
     margin-left: 10px;
-    /* optional spacing */
 }
 
+.history-container h2 {
+    /*History title*/
+    grid-column: 1 / -1;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: var(--accent2-color);
+    padding: 1rem 0;
+}
 
-nav a {
-    margin: 0 8px;
+.history-container {
+    /*History background settings*/
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    background-color: var(--accent1-color);
+}
+
+.history-image img {
+    /*History img*/
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+.history-left,
+.history-right {
+    /*History text*/
+    text-align: center;
+    padding: 2%;
+}
+
+.adventures {
+    /*adventure container*/
+    background-color: var(--primary-color);
+    padding: 2%;
+    text-align: center;
+}
+
+.adventures h3 {
+    /*adventure title*/
+    font-weight: bolder;
+    font-size: 2rem;
     color: var(--accent2-color);
     margin-bottom: 1rem;
 }
@@ -143,4 +204,7 @@ footer nav.socialmedia img {
 
 .socialmedia a {
     text-decoration: none;
+}
+
+font-weight: bold;
 }
