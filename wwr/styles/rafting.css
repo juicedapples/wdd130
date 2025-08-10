@@ -204,3 +204,238 @@ footer nav.socialmedia img {
 .socialmedia a {
     text-decoration: none;
 }
+
+/*ABOUT PAGE CSS START*/
+
+/*Company Info section*/
+h4 {
+    /*Company title title*/
+    grid-column: 1 / -1;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: var(--accent2-color);
+    padding: 1rem 0;
+}
+
+.company-container {
+    /*Company background settings*/
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 10%;
+}
+
+/*company info contact text edits*/
+p1,
+p2,
+p3 {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.company-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 5%;
+    flex-wrap: wrap;
+}
+
+.company-left {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+.map-container {
+    flex: 1;
+    min-width: 400px;
+}
+
+
+/*EMPLOYEE SECTION*/
+.employees {
+    /*employee container*/
+    background-color: var(--accent1-color);
+    padding: 2%;
+    text-align: center;
+}
+
+.employees h5 {
+    /*employee title*/
+    font-weight: bolder;
+    font-size: 2rem;
+    color: var(--accent2-color);
+    margin-bottom: 1rem;
+}
+
+/*Employee gallary photos to fit in row*/
+.employee-gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.employee-gallery-row figure {
+    width: 200px;
+    text-align: center;
+}
+
+.employee-gallery-row img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+p4,
+p5,
+p6,
+p7,
+p8 {
+    text-align: left;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/*FORM STARTS*/
+legend {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: var(--accent2-color);
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid var(--accent2-color);
+    border-radius: 0.5rem;
+    background-color: var(--secondary-color);
+    display: grid;
+    padding-right: 3rem;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid var(--accent2-color);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: var(--accent2-color);
+    font-size: 1.3rem;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: var(--body-font);
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+
+}
+
+input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+.radio-group {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.radio-group label {
+    text-align: center;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-family: var(--body-font);
+    padding: 0;
+}
+
+.form-item.column1 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form-item.column1 textarea {
+    width: 100%;
+}
+
+.form-item.column1 label {
+    text-align: left;
+}
+
+
+
+/*Footer Starts*/
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
