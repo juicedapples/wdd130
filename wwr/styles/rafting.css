@@ -30,12 +30,6 @@ footer {
     margin: 0 auto;
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
 nav a {
     /*home, about us, trips, contact us menu*/
     color: var(--accent2-color);
@@ -231,14 +225,22 @@ h4 {
 
 /*company info contact text edits*/
 
+h1 {
+    text-align: center;
+    background-color: #64e1e6;
+    text-decoration: underline;
+    font-size: xx-large;
+    padding-top: 10%;
+}
+
+h4 {
+    font-size: x-large;
+}
+
+
 .company-container {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    gap: 2rem;
-    width: 100%;
-    background-color: var(--primary-color);
-    padding: 5%;
     flex-wrap: wrap;
 }
 
