@@ -45,10 +45,11 @@
                 </div>
 
                 <div class="map-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6083.466185813851!2d-104.12378327273485!3d40.32608079228233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sGreen%20River!5e0!3m2!1sen!2smx!4v1754797933419!5m2!1sen!2smx"
-                        height="215" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="google-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.5954232054914!2d-104.1196494!3d40.32913569999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876dd0b4f1bcb5f9%3A0x4df9124f7dea3acc!2sFront%20Rd%2C%20Orchard%2C%20CO%2080649%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1755049975985!5m2!1ses-419!2smx"
+                        width="600" height="215" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -95,23 +96,50 @@
             </fieldset>
 
             <fieldset>
-                <legend>Email Notifications</legend>
+                <legend>Questions</legend>
                 <div class="form-item column1">
-                    <label>Do you want to opt into email notifications?</label>
+                    <label>Are you interest in booking with us?</label>
                     <div class="radio-group">
-                        <label>
-                            <input type="radio" name="email_opt_in" value="yes" required> Yes
+                        <label for="notify-yes">
+                            <input type="radio" id="notify-yes" name="notifications" value="yes">
+                            Yes
                         </label>
-                        <label>
-                            <input type="radio" name="email_opt_in" value="no"> No
+                        <label for="notify-maybe">
+                            <input type="radio" id="notify-maybe" name="notifications" value="maybe">
+                            Maybe
                         </label>
-                        <label>
-                            <input type="radio" name="email_opt_in" value="maybe"> Maybe
+                        <label for="notify-no">
+                            <input type="radio" id="notify-no" name="notifications" value="no">
+                            No
                         </label>
                     </div>
                 </div>
+                <div class="form-item column2">
+                    <p><strong>Which activities do you enjoy? (Mark all that apply)</strong></p>
 
-                <div class="form-item column1">
+                    <label>
+                        <input type="checkbox" id="activity-rafting" name="activities" value="rafting">
+                        Rafting
+                    </label><br>
+
+                    <label>
+                        <input type="checkbox" id="activity-kayaking" name="activities" value="kayaking">
+                        Kayaking
+                    </label><br>
+
+                    <label>
+                        <input type="checkbox" id="activity-tubing" name="activities" value="tubing">
+                        Tubing
+                    </label><br>
+
+                    <label>
+                        <input type="checkbox" id="activity-boating" name="activities" value="boating">
+                        Boating
+                    </label>
+                </div>
+
+
+                <div class="form-item column3">
                     <label for="question">Please write your questions or comments in this box:</label>
                     <textarea id="question" name="question" rows="4"
                         placeholder="e.g. What times do you have available for July 4th?"></textarea>
