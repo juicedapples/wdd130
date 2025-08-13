@@ -10,13 +10,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
 
-    <title>Splash Rapids</title>
+    <title>Contact</title>
 </head>
 
 <body>
@@ -29,20 +27,20 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+
     <main>
+        <h1>Contact Splash Rapids</h1>
+
         <section class="company">
             <div class="company-container">
                 <h4>Company Information</h4>
                 <div class="company-left">
-                    <p1>Address:</p1>
-                    <p>58 Wheat Front Rd, Orchard, CO 80649, USA</p>
-                    <br>
-                    <p2>Email:</p2>
-                    <p>splash.rapids@gmail.com</p>
-                    <br>
-                    <p3>Phone(s):</p3>
-                    <p>Booking: (800) 123-4567</p>
-                    <p>Customer Service: (800) 7654-321</p>
+                    <p><strong>Address:</strong> 58 Wheat Front Rd, Orchard, CO 80649, USA</p>
+                    <p><strong>Email:</strong> splash.rapids@gmail.com</p>
+                    <p><strong>Phone(s):</strong><br>
+                        Booking: (800) 123-4567<br>
+                        Customer Service: (800) 7654-321
+                    </p>
                 </div>
 
                 <div class="map-container">
@@ -51,81 +49,76 @@
                         height="215" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
+            </div>
         </section>
+
         <section class="employees">
-            <h5>Our Wonderful Team!</h5>
+            <h2>Our Wonderful Team!</h2>
             <div class="employee-gallary">
                 <div class="employee-gallery-row">
                     <figure>
-                        <img src="images/employee1.webp" alt="employee1">
-                        <p4>CEO & Founder</p4>
-                        <p>Linda Ivana Rocha Vazquez</p>
+                        <img src="images/employee1.webp" alt="CEO Linda Ivana Rocha Vazquez">
+                        <figcaption><strong>CEO & Founder</strong><br>Linda Ivana Rocha Vazquez</figcaption>
                     </figure>
                     <figure>
-                        <img src="images/employee2.webp" alt="employee2">
-                        <p5>CFO</p5>
-                        <p>Ethan James Carter</p>
+                        <img src="images/employee2.webp" alt="CFO Ethan James Carter">
+                        <figcaption><strong>CFO</strong><br>Ethan James Carter</figcaption>
                     </figure>
                     <figure>
-                        <img src="images/employee3.webp" alt="employee3">
-                        <p6>Outdoors Coordinator</p6>
-                        <p>Luca Alexander Hayes</p>
+                        <img src="images/employee3.webp" alt="Outdoors Coordinator Luca Alexander Hayes">
+                        <figcaption><strong>Outdoors Coordinator</strong><br>Luca Alexander Hayes</figcaption>
                     </figure>
                     <figure>
-                        <img src="images/employee4.webp" alt="employee4">
-                        <p7>HR Director</p7>
-                        <p>Miles Benjamin Turner</p>
+                        <img src="images/employee4.webp" alt="HR Director Miles Benjamin Turner">
+                        <figcaption><strong>HR Director</strong><br>Miles Benjamin Turner</figcaption>
                     </figure>
                     <figure>
-                        <img src="images/employee5.webp" alt="employee5">
-                        <p8>Sales Director</p8>
-                        <p> Isabella Grace Monroe</p>
-                        <br>
+                        <img src="images/employee5.webp" alt="Sales Director Isabella Grace Monroe">
+                        <figcaption><strong>Sales Director</strong><br>Isabella Grace Monroe</figcaption>
                     </figure>
-
                 </div>
             </div>
         </section>
+
         <form>
             <fieldset>
                 <legend>Contact Information</legend>
                 <div class="form-item column2">
                     <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname">
-                    <br>
+                    <input type="text" id="fullname" name="fullname" required>
                 </div>
                 <div class="form-item column2">
                     <label for="useremail">Email:</label>
-                    <input type="email" id="useremail" name="useremail">
+                    <input type="email" id="useremail" name="useremail" required>
                 </div>
             </fieldset>
-            <fieldset>
-                <div class="form-item column1">
-                    <div class="radio-group">
-                        <p9>Do you want to opt into email notifications?</p9>
-                        <label for="booking-yes">
-                            <input type="radio" id="booking-yes" name="booking" value="yes">
-                            Yes
-                        </label>
 
-                        <label for="booking-no">
-                            <input type="radio" id="booking-no" name="booking" value="no">
-                            No
+            <fieldset>
+                <legend>Email Notifications</legend>
+                <div class="form-item column1">
+                    <label>Do you want to opt into email notifications?</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="email_opt_in" value="yes" required> Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="email_opt_in" value="no"> No
+                        </label>
+                        <label>
+                            <input type="radio" name="email_opt_in" value="maybe"> Maybe
                         </label>
                     </div>
-                    <div class="question-group"></div>
-                    <br>
-                    <br>
+                </div>
+
+                <div class="form-item column1">
                     <label for="question">Please write your questions or comments in this box:</label>
-                    <br>
                     <textarea id="question" name="question" rows="4"
                         placeholder="e.g. What times do you have available for July 4th?"></textarea>
                 </div>
             </fieldset>
+
             <button type="submit">Submit</button>
         </form>
-
     </main>
 
     <footer>
