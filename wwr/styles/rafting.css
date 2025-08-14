@@ -37,7 +37,6 @@ nav a {
     font-size: larger;
     text-decoration: none;
     text-align: center;
-
 }
 
 nav {
@@ -200,7 +199,6 @@ footer nav.socialmedia img {
 }
 
 /*ABOUT PAGE CSS START*/
-
 /*Company Info section*/
 h4 {
     /*Company title title*/
@@ -221,19 +219,21 @@ h4 {
     width: 100%;
     background-color: var(--primary-color);
     padding: 10%;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
 }
 
 /*company info contact text edits*/
-
 .company-container h1 {
     text-align: center;
     background-color: #64e1e6;
     text-decoration: underline;
     font-size: xx-large;
     padding-bottom: 5%;
+}
+
+.company-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .company-left {
@@ -294,14 +294,11 @@ h2 {
 /*FORM STARTS*/
 legend {
     margin: 1rem;
+    font-size: 1.5em;
     color: var(--accent2-color);
     text-align: center;
     font-weight: bolder;
-    padding: 0.5rem;
-    color: var(--accent2-color);
-    font-size: 1.3rem;
 }
-
 
 form {
     width: 100%;
@@ -322,6 +319,12 @@ fieldset {
     padding: 1rem;
 }
 
+legend {
+    padding: 0.5rem;
+    color: var(--accent2-color);
+    font-size: 1.3rem;
+}
+
 label,
 input,
 button,
@@ -340,7 +343,6 @@ select,
 textarea {
     padding: 0.5rem;
     font-size: 1.1rem;
-
 }
 
 input[type="radio"] {
@@ -383,7 +385,6 @@ button:hover {
     text-align: center
 }
 
-
 .form-item.column3 label,
 .form-item.column4 label {
     text-align: center;
@@ -395,9 +396,27 @@ button:hover {
     align-items: center;
 }
 
+/*Footer Starts*/
+footer {
+    margin: 1rem auto 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    background-color: var(--secondary-color);
+    border-top: var(--secondary-color);
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
 /*HOME PAGE*/
 /* Hero Section */
-
 #top-intro {
     text-align: center;
 }
@@ -444,7 +463,6 @@ button:hover {
     background-color: var(--accent2-color);
     color: var(--secondary-color);
     padding: 5%;
-
 }
 
 .services h3 {
@@ -468,7 +486,6 @@ button:hover {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: var(--accent2-color);
-
 }
 
 .services img {
@@ -481,7 +498,6 @@ button:hover {
     justify-content: center;
     flex-wrap: wrap;
     background-color: var(--accent2-color);
-
 }
 
 .view-trips {
@@ -489,7 +505,6 @@ button:hover {
     background-color: var(--accent2-color);
     padding-bottom: 7%;
 }
-
 
 #info-section .container {
     display: grid;
@@ -502,7 +517,6 @@ button:hover {
     background-color: var(--primary-color);
     padding-bottom: 10%;
 }
-
 
 .information-image img {
     width: 100%;
@@ -570,7 +584,6 @@ button:hover {
     color: var(--secondary-color);
     padding: 0 1rem;
 }
-
 
 .btn.btn-primary {
     background-color: var(--accent1-color);
