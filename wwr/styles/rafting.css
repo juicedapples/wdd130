@@ -225,18 +225,13 @@ h4 {
 
 /*company info contact text edits*/
 
-h1 {
+.company-container h1 {
     text-align: center;
     background-color: #64e1e6;
     text-decoration: underline;
     font-size: xx-large;
-    padding-top: 10%;
+    padding-bottom: 5%;
 }
-
-h4 {
-    font-size: x-large;
-}
-
 
 .company-container {
     display: flex;
@@ -260,7 +255,7 @@ h4 {
 .google-map {
     border: 0;
     width: 100%;
-    height: 215px;
+    height: 275px;
 }
 
 /*EMPLOYEE SECTION*/
@@ -284,6 +279,7 @@ h2 {
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
+    padding-bottom: 5%;
 }
 
 .employee-gallery-row figure {
@@ -427,6 +423,7 @@ footer {
 
 /*HOME PAGE*/
 /* Hero Section */
+
 #top-intro {
     text-align: center;
 }
@@ -468,7 +465,7 @@ footer {
 /*SERVICES*/
 .container h1 {
     font-family: var(--heading-font);
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-align: center;
     background-color: var(--accent2-color);
     color: var(--secondary-color);
@@ -548,4 +545,127 @@ footer {
     font-family: var(--heading-font);
     font-size: 3rem;
     text-align: center;
+    background-color: var(--primary-color);
+    padding-top: 5%;
+}
+
+#info-section h2 {
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    text-align: center;
+}
+
+/*TRIPS PAGE*/
+/* Trips Section (Styled like Services) */
+#trips-section {
+    background-color: var(--accent2-color);
+    padding: 5% 0;
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.trips img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.trips h3 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.trips p {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    padding: 0 1rem;
+}
+
+
+.btn.btn-primary {
+    background-color: var(--accent1-color);
+    border: none;
+    color: var(--accent2-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: auto;
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+/*table section*/
+#table-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+    background-color: var(--secondary-color);
+}
+
+#table-section h1 {
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding-bottom: 8%;
+}
+
+#table-section table {
+    width: 90%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#table-section th,
+#table-section td {
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    color: var(--accent2-color);
+}
+
+#table-section thead {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    font-weight: bold;
+}
+
+#table-section tbody tr:nth-child(even) {
+    background-color: var(--primary-color);
+}
+
+#table-section tbody tr:nth-child(odd) {
+    background-color: var(--secondary-color);
+}
+
+.btn-question-contact:hover {
+    align-items: center;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
 }
