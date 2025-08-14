@@ -445,14 +445,14 @@ footer {
 .service1,
 .service2,
 .service3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     font-family: var(--body-font);
 }
 
 .home-text h3 {
     padding: 2%;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /*SERVICES*/
@@ -655,4 +655,15 @@ footer {
     align-items: center;
     background-color: var(--accent2-color);
     color: var(--secondary-color);
+}
+
+.view-trips {
+    text-align: center;
+    background-color: var(--accent2-color);
+}
+
+.btn,
+.btn.btn-primary {
+    text-decoration: none;
+    padding: 1rem 2rem;
 }
