@@ -451,11 +451,15 @@ footer {
     border-radius: 10px;
 }
 
-.home-text p, .service1, .service2, .service3 {
+.home-text p,
+.service1,
+.service2,
+.service3 {
     font-size: 1rem;
     margin-bottom: 1rem;
     font-family: var(--body-font);
 }
+
 .home-text h3 {
     padding: 2%;
     font-size: 2rem;
@@ -469,8 +473,9 @@ footer {
     background-color: var(--accent2-color);
     color: var(--secondary-color);
     padding: 5%;
-    
+
 }
+
 .services h3 {
     font-family: var(--heading-font);
     text-align: center;
@@ -479,9 +484,10 @@ footer {
     background-color: var(--accent2-color);
     color: var(--secondary-color);
 }
+
 .services p {
     color: var(--secondary-color);
-    padding:5%;
+    padding: 5%;
     text-align: center;
 }
 
@@ -491,8 +497,9 @@ footer {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: var(--accent2-color);
-    
+
 }
+
 .services img {
     width: 100%;
     height: 300px;
@@ -517,7 +524,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 2rem;
     align-items: center;
@@ -540,6 +547,7 @@ footer {
 .information-text {
     justify-content: center;
     font-family: var(--body-font);
+    width: 100%;
 }
 
 #info-section h1 {
@@ -547,4 +555,3 @@ footer {
     font-family: var(--heading-font);
     font-size: 2.5rem;
 }
-
