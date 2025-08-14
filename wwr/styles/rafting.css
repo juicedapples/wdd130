@@ -667,3 +667,25 @@ footer {
     text-decoration: none;
     padding: 1rem 2rem;
 }
+
+/* Style <a> elements as buttons */
+.btn-question-contact {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.btn-question-contact:hover {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color)
+}
+
+.information-text {
+    text-align: center;
+}
