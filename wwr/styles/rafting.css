@@ -294,10 +294,12 @@ h2 {
 /*FORM STARTS*/
 legend {
     margin: 1rem;
-    font-size: 1.5em;
     color: var(--accent2-color);
     text-align: center;
     font-weight: bolder;
+    padding: 0.5rem;
+    color: var(--accent2-color);
+    font-size: 1.3rem;
 }
 
 
@@ -318,12 +320,6 @@ fieldset {
     margin: 1rem;
     border: 1px solid var(--accent2-color);
     padding: 1rem;
-}
-
-legend {
-    padding: 0.5rem;
-    color: var(--accent2-color);
-    font-size: 1.3rem;
 }
 
 label,
@@ -397,25 +393,6 @@ button:hover {
 .form-item {
     display: grid;
     align-items: center;
-}
-
-/*Footer Starts*/
-footer {
-    margin: 1rem auto 0;
-    width: 100%;
-    text-align: center;
-    font-size: 0.8em;
-    background-color: var(--secondary-color);
-    border-top: var(--secondary-color);
-}
-
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
-}
-
-.column2 {
-    grid-template-columns: 1fr 2fr;
 }
 
 /*HOME PAGE*/
